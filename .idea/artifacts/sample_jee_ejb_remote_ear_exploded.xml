@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="sample-jee-ejb-remote:ear exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-ejb-remote/target/sample-jee-ear-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-ejb-remote/javaeeApplication/JavaEE" />
+    </root>
+  </artifact>
+</component>

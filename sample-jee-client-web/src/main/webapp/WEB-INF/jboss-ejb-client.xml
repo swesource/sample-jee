@@ -1,0 +1,16 @@
+<jboss-ejb-client xmlns="urn:jboss:ejb-client:1.1">
+    <client-context>
+        <ejb-receivers>
+            <remoting-ejb-receiver outbound-connection-ref="local-ejb-connection"/>
+            <!--<remoting-ejb-receiver outbound-connection-ref="remote-ejb-connection"/>-->
+        </ejb-receivers>
+        <clusters>
+            <cluster name="ejb" max-allowed-connected-nodes="20" cluster-node-selector="com.swesource.sample.jee.jbossas7.clustering.RoundRobinClusterNodeSelector" connect-timeout="5000" security-realm="ejb-security-realm">
+                <connection-creation-options>
+                    <property name="org.xnio.Options.SSL_ENABLED" value="false"/>
+                    <property name="org.xnio.Options.SASL_POLICY_NOANONYMOUS" value="false"/>
+                </connection-creation-options>
+            </cluster>
+        </clusters>
+    </client-context>
+</jboss-ejb-client>

@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="sample-jee-relay-ear:ear exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-relay-ear/target/sample-jee-relay</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-relay-ear/javaeeApplication/JavaEE" />
+      <element id="dir-copy" path="$PROJECT_DIR$/sample-jee-relay-ear/src/main/application" />
+      <element id="directory" name="lib">
+        <element id="archive" name="sample-jee-server-ejb-remote-1.0-SNAPSHOT.jar">
+          <element id="module-output" name="sample-jee-server-ejb-remote" />
+        </element>
+        <element id="archive" name="sample-jee-relay-ejb-remote-1.0-SNAPSHOT.jar">
+          <element id="module-output" name="sample-jee-relay-ejb-remote" />
+        </element>
+        <element id="archive" name="sample-jee-client-util-1.0-SNAPSHOT.jar">
+          <element id="module-output" name="sample-jee-client-util" />
+        </element>
+        <element id="library" level="project" name="Maven: org.jboss:jboss-ejb-client:1.0.10.Final" />
+        <element id="library" level="project" name="Maven: org.jboss.marshalling:jboss-marshalling:1.3.14.GA" />
+        <element id="library" level="project" name="Maven: org.jboss.xnio:xnio-api:3.0.3.GA" />
+        <element id="library" level="project" name="Maven: org.jboss.remoting3:jboss-remoting:3.2.7.GA" />
+        <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.1.GA" />
+      </element>
+      <element id="directory" name="sample-jee-relay-ejb-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="sample-jee-relay-ejb:ejb exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

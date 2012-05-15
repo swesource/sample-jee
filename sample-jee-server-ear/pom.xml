@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.swesource.sample</groupId>
+        <artifactId>sample-jee</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>sample-jee-server-ear</artifactId>
+    <packaging>ear</packaging>
+    <name>${project.parent.artifactId} Server EAR</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <!--
+                    <finalName>${project.artifactId}</finalName>
+                    -->
+                    <version>${jee-version}</version>
+                    <modules>
+                        <javaModule>
+                            <groupId>${project.parent.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-server-ejb-local</artifactId>
+                            <bundleDir>lib</bundleDir>
+                        </javaModule>
+                        <javaModule>
+                            <groupId>${project.parent.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
+                            <bundleDir>lib</bundleDir>
+                        </javaModule>
+                        <ejbModule>
+                            <groupId>${project.parent.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-server-ejb</artifactId>
+                        </ejbModule>
+                        <!--
+                        <webModule>
+                            <groupId>${project.parent.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-web</artifactId>
+                            <contextRoot>/sample-jee</contextRoot>
+                        </webModule>
+                        -->
+                    </modules>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <configuration>
+                    <filename>${project.artifactId}.ear</filename>
+                    <skip>false</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>${parent.artifactId}-server</finalName>
+    </build>
+
+    <dependencies>
+        <!-- local EJB interfaces -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-server-ejb-local</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- remote EJB interfaces -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- EJBs -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-server-ejb</artifactId>
+            <version>${project.parent.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <!--
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-web</artifactId>
+            <version>${project.parent.version}</version>
+            <type>war</type>
+        </dependency>
+        -->
+    </dependencies>
+</project>

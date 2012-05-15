@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="sample-jee-ejb:ejb">
+    <output-path>$PROJECT_DIR$/sample-jee-ejb/target</output-path>
+    <root id="archive" name="sample-jee-ejb-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="sample-jee-ejb:ejb exploded" />
+      <element id="archive" name="sample-jee-ejb-local-1.0-SNAPSHOT.jar">
+        <element id="module-output" name="sample-jee-server-ejb-local" />
+      </element>
+      <element id="archive" name="sample-jee-ejb-remote-1.0-SNAPSHOT.jar">
+        <element id="module-output" name="sample-jee-server-ejb-remote" />
+      </element>
+    </root>
+  </artifact>
+</component>

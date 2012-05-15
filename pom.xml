@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.swesource.sample</groupId>
+    <artifactId>sample-jee</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>sample-jee</name>
+    <description>
+        A sample Java EE project.
+        See the README for a more complete description.
+    </description>
+    <url>http://code.swesource.com/swesource/sample-jee</url>
+    <inceptionYear>2012</inceptionYear>
+
+    <modules>
+        <module>${project.artifactId}-client-ear</module>
+        <module>${project.artifactId}-client-ejb</module>
+        <module>${project.artifactId}-client-ejb-remote</module>
+        <module>${project.artifactId}-client-web</module>
+        <module>${project.artifactId}-client-util</module>
+        <module>${project.artifactId}-relay-ear</module>
+        <module>${project.artifactId}-relay-ejb</module>
+        <module>${project.artifactId}-relay-ejb-remote</module>
+        <module>${project.artifactId}-server-ear</module>
+        <module>${project.artifactId}-server-ejb</module>
+        <module>${project.artifactId}-server-ejb-local</module>
+        <module>${project.artifactId}-server-ejb-remote</module>
+        <!--<module>${project.artifactId}-server-web</module>-->
+        <module>${project.artifactId}-standalone-ejb-client</module>
+    </modules>
+
+    <licenses>
+        <license>
+            <name>CC BY 3.0</name>
+            <url>http://creativecommons.org/licenses/by/3.0/legalcode</url>
+            <distribution>manual</distribution>
+            <comments>
+                Use it freely, but please but give public and documented
+                credit to Arnold Johansson @ swesource.com
+            </comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>swesource</id>
+            <name>Arnold Johansson</name>
+            <roles>
+                <role>Lead</role>
+            </roles>
+            <email>arnold.johansson@swesource.com</email>
+            <timezone>1</timezone>
+            <organization>Swesource</organization>
+            <organizationUrl>http://www.swesource.com/</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.resourceDirectory>src/main/resources</project.build.resourceDirectory>
+        <java-version>1.6</java-version>
+        <jee-version>6</jee-version>
+        <ejb-version>3.1</ejb-version>
+        <jbossas-version>7.1.2.Final</jbossas-version>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.build.resourceDirectory}</directory>
+            </resource>
+            <resource>
+                <directory>${project.build.sourceDirectory}</directory>
+                <includes>
+                    <include>**/package-info.java</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java-version}</source>
+                    <target>${java-version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <version>2.7</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>2.3</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>2.3.7</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.jboss.as.plugins</groupId>
+                    <artifactId>jboss-as-maven-plugin</artifactId>
+                    <!-- TODO: Change to jbossas-version as soon as it is available! -->
+                    <!-- <version>${jbossas-version}</version> -->
+                    <version>7.1.1.Final</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.12</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>JBossCommunityNexus</id>
+            <url>http://repository.jboss.org/nexus/content/groups/public-jboss</url>
+        </repository>
+        <repository>
+            <id>maven2-repository.java.net</id>
+            <!-- <name>Java.net Repository for Maven</name>  -->
+            <url>http://download.java.net/maven/2/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-6.0</artifactId>
+                <version>3.0.0.Final</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-ejb-client-bom</artifactId>
+                <version>${jbossas-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-bom</artifactId>
+                <version>4.2.0.Final</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.10</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

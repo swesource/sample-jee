@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="sample-jee-client-ejb (1):ejb exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-relay-ejb/target/sample-jee-relay-ejb-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-client-ejb (1)/ejb/EJB" />
+      <element id="module-output" name="sample-jee-client-ejb (1)" />
+    </root>
+  </artifact>
+</component>

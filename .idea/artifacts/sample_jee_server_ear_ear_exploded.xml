@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="sample-jee-server-ear:ear exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-server-ear/target/sample-jee-server</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-server-ear/javaeeApplication/JavaEE" />
+      <element id="dir-copy" path="$PROJECT_DIR$/sample-jee-server-ear/src/main/application" />
+      <element id="archive" name="sample-jee-server-ejb-local-1.0-SNAPSHOT.jar">
+        <element id="module-output" name="sample-jee-server-ejb-local" />
+      </element>
+      <element id="archive" name="sample-jee-server-ejb-remote-1.0-SNAPSHOT.jar">
+        <element id="module-output" name="sample-jee-server-ejb-remote" />
+      </element>
+      <element id="directory" name="sample-jee-server-ejb-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="sample-jee-server-ejb:ejb exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="sample-jee-web-ear:ear exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-web-ear/target/sample-jee</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-web-ear/javaeeApplication/JavaEE" />
+      <element id="dir-copy" path="$PROJECT_DIR$/sample-jee-client-ear/src/main/application" />
+      <element id="archive" name="sample-jee-ejb-remote-1.0-SNAPSHOT.jar">
+        <element id="module-output" name="sample-jee-server-ejb-remote" />
+      </element>
+      <element id="directory" name="sample-jee-client-web-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="sample-jee-client-web:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

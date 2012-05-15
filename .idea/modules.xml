@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sample-jee.iml" filepath="$PROJECT_DIR$/sample-jee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-client-ear/sample-jee-client-ear.iml" filepath="$PROJECT_DIR$/sample-jee-client-ear/sample-jee-client-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-client-ejb/sample-jee-client-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-client-ejb/sample-jee-client-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-client-ejb-remote/sample-jee-client-ejb-remote.iml" filepath="$PROJECT_DIR$/sample-jee-client-ejb-remote/sample-jee-client-ejb-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-client-util/sample-jee-client-util.iml" filepath="$PROJECT_DIR$/sample-jee-client-util/sample-jee-client-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-client-web/sample-jee-client-web.iml" filepath="$PROJECT_DIR$/sample-jee-client-web/sample-jee-client-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-relay-ear/sample-jee-relay-ear.iml" filepath="$PROJECT_DIR$/sample-jee-relay-ear/sample-jee-relay-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-relay-ejb/sample-jee-relay-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-relay-ejb/sample-jee-relay-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-relay-ejb-remote/sample-jee-relay-ejb-remote.iml" filepath="$PROJECT_DIR$/sample-jee-relay-ejb-remote/sample-jee-relay-ejb-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ear/sample-jee-server-ear.iml" filepath="$PROJECT_DIR$/sample-jee-server-ear/sample-jee-server-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb-remote/sample-jee-server-ejb-remote.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb-remote/sample-jee-server-ejb-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client/sample-jee-standalone-ejb-client.iml" filepath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/sample-jee-standalone-ejb-client.iml" />
+    </modules>
+  </component>
+</project>
+
