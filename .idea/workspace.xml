@@ -2,152 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f54c588-1d07-434e-8ca4-e642a73c4743" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/target/sample-jee-client-ejb-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-ejb/target/sample-jee-ejb-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_ear_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_ear_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_ejb__1__ejb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_ejb__1__ejb_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_ejb_ejb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_ejb_ejb_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_client_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_ear_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_ear_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_ejb_ejb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_ejb_ejb_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_ejb_remote_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_ejb_remote_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_relay_ear_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_relay_ear_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_relay_ejb_ejb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_relay_ejb_ejb_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_server_ear_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_server_ear_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_web_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_web_ear_ear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_web_ear_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_web_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sample_jee_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_11_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_swesource_sample_sample_jee_web_war_1_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_enterprise_cdi_api_1_0_SP4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_ejb3_jboss_ejb3_ext_api_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_common_core_2_2_17_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_ejb_client_1_0_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_spi_2_0_5_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_1_3_14_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_naming_jnp_client_5_0_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_remoting3_jboss_remoting_3_2_7_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_1_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ejb_jboss_ejb_api_3_1_spec_1_0_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_faces_jboss_jsf_api_2_1_spec_2_0_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_interceptor_jboss_interceptors_api_1_1_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_jms_jboss_jms_api_1_1_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_servlet_jboss_servlet_api_3_0_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_0_3_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_richfaces_core_richfaces_core_api_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_richfaces_core_richfaces_core_impl_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_richfaces_ui_richfaces_components_api_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_richfaces_ui_richfaces_components_ui_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_jdbc4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ear/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ear/sample-jee-client-ear.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ear/src/main/application/META-INF/jboss-ejb-client.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb-remote/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb-remote/sample-jee-client-ejb-remote.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb-remote/src/main/java/com/swesource/sample/jee/ClientSlsbRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/sample-jee-client-ejb.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/main/java/com/swesource/sample/jee/ClientSlsbBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/main/resources/META-INF/MANIFEST.MF.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/main/resources/META-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/main/resources/META-INF/jboss-ejb3.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/main/resources/META-INF/jboss.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/main/resources/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/test/resources/META-INF/hsqldb-ds.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-ejb/src/test/resources/test-persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-util/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-util/sample-jee-client-util.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-util/src/main/java/com/swesource/sample/jee/jbossas7/clustering/RoundRobinClusterNodeSelector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/sample-jee-client-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SfsbClientServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/webapp/WEB-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/webapp/WEB-INF/jboss-ejb-client.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-local/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-local/src/main/java/com/swesource/sample/jee/ServerSfsbLocal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-local/src/main/java/com/swesource/sample/jee/ServerSlsbLocal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-remote/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-remote/sample-jee-server-ejb-remote.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-remote/src/main/java/com/swesource/sample/jee/ServerSfsbRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb-remote/src/main/java/com/swesource/sample/jee/ServerSlsbRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/data/hsqldb/hsqldb.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/data/hsqldb/hsqldb.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/data/hsqldb/hsqldb.script" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/java/com/swesource/sample/jee/ServerSfsbBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/java/com/swesource/sample/jee/ServerSlsbBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/resources/META-INF/MANIFEST.MF.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/resources/META-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/resources/META-INF/jboss-ejb3.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/resources/META-INF/jboss.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/main/resources/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/test/resources/META-INF/hsqldb-ds.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-server-ejb/src/test/resources/test-persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ear/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ear/sample-jee-relay-ear.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ear/src/main/application/META-INF/jboss-ejb-client.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb-remote/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb-remote/sample-jee-relay-ejb-remote.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb-remote/src/main/java/com/swesource/sample/jee/RelaySlsbRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/sample-jee-relay-ejb.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/main/java/com/swesource/sample/jee/RelaySlsbBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/main/resources/META-INF/MANIFEST.MF.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/main/resources/META-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/main/resources/META-INF/jboss-ejb3.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/main/resources/META-INF/jboss.xml.OLD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/main/resources/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/test/resources/META-INF/hsqldb-ds.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-relay-ejb/src/test/resources/test-persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/sample-jee-standalone-ejb-client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/main/java/com/swesource/sample/jee/jms/SampleProducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/main/resources/META-INF/jboss-ejb-client.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/main/resources/META-INF/jboss.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/main/resources/java.policy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/main/resources/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/test/resources/META-INF/hsqldb-ds.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/src/test/resources/test-persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-jee.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java" afterPath="$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java" />
     </list>
     <ignored path="sample-jee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -208,17 +65,7 @@
     <favorites_list name="sample-jee" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SlsbClientServlet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="110" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.124797404">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -245,8 +92,8 @@
         <option value="$PROJECT_DIR$/sample-jee-client-ear/pom.xml" />
         <option value="$PROJECT_DIR$/sample-jee-relay-ear/pom.xml" />
         <option value="$PROJECT_DIR$/sample-jee-server-ear/pom.xml" />
-        <option value="$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java" />
       </list>
     </option>
   </component>
@@ -325,6 +172,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -351,114 +208,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="sample-jee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee-standalone-ejb-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee-client-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee-client-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee-client-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jee-client-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -512,6 +261,7 @@
             <option name="localRepository" value="" />
             <option name="mavenHome" value="" />
             <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
             <option name="pluginUpdatePolicy" value="DO_NOT_UPDATE" />
             <option name="printErrorStackTraces" value="false" />
             <option name="snapshotUpdatePolicy" value="ALWAYS_UPDATE" />
@@ -664,20 +414,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="22" width="1245" height="778" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32999164" sideWeight="0.6712329" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20718463" sideWeight="0.21765602" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27447698" sideWeight="0.325723" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2041841" sideWeight="0.36834094" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -685,12 +434,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3205021" sideWeight="0.6712329" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27447698" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27272728" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -754,114 +504,84 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sample-jee-client-ejb-remote/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample-jee-client-util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="0.45238096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample-jee-client-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="60" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.8095238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample-jee-relay-ejb/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-0.7619048">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-relay-ejb-remote/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-client-ejb/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.61904764">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample-jee-server-ejb/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="635" selection-end="635" vertical-scroll-proportion="0.39473686">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.61904764" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-server-ejb-local/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="645" selection-end="645" vertical-scroll-proportion="0.3809524">
-          <folding />
-        </state>
+        <state line="16" column="46" selection-start="645" selection-end="645" vertical-scroll-proportion="0.3809524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="21" selection-start="1991" selection-end="1991" vertical-scroll-proportion="1.2857143">
-          <folding />
-        </state>
+        <state line="54" column="21" selection-start="1991" selection-end="1991" vertical-scroll-proportion="1.2857143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-server-ejb-remote/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="646" selection-end="646" vertical-scroll-proportion="0.3809524">
-          <folding />
-        </state>
+        <state line="16" column="46" selection-start="646" selection-end="646" vertical-scroll-proportion="0.3809524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-client-ear/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="76" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.16666667">
-          <folding />
-        </state>
+        <state line="42" column="76" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.16666667" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-relay-ear/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.26190478">
-          <folding />
-        </state>
+        <state line="41" column="0" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.26190478" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-server-ear/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="46" selection-start="2734" selection-end="2734" vertical-scroll-proportion="0.5952381">
-          <folding />
-        </state>
+        <state line="62" column="46" selection-start="2734" selection-end="2734" vertical-scroll-proportion="0.5952381" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SfsbClientServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="485" selection-end="485" vertical-scroll-proportion="0.024311183">
-          <folding />
-        </state>
+        <state line="18" column="13" selection-start="485" selection-end="485" vertical-scroll-proportion="0.024311183" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="25" selection-end="25" vertical-scroll-proportion="0.04761905">
-          <folding />
-        </state>
+        <state line="2" column="9" selection-start="25" selection-end="25" vertical-scroll-proportion="0.04761905" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample-jee-server-ejb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="35" selection-start="2607" selection-end="2607" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.9047619" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample-jee-client-util/src/main/java/com/swesource/sample/jee/jbossas7/clustering/RoundRobinClusterNodeSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="24" selection-start="858" selection-end="858" vertical-scroll-proportion="0.48622367" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-jee-client-web/src/main/java/com/swesource/sample/jee/web/SlsbClientServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="110" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.124797404">
+        <state line="48" column="13" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.6353322" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample-jee-client-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
