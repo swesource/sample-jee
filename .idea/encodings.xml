@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-client-ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-client-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-client-ejb-remote" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-client-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-client-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-relay-ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-relay-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-relay-ejb-remote" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-server-ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-server-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-server-ejb-local" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-server-ejb-remote" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client" charset="UTF-8" />
+  </component>
 </project>
 

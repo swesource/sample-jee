@@ -41,18 +41,26 @@
             <scope>provided</scope>
         </dependency>
         <!-- jms -->
-        <!-- ejb -->
         <dependency>
             <groupId>org.jboss.spec.javax.jms</groupId>
             <artifactId>jboss-jms-api_1.1_spec</artifactId>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
+        <!-- -->
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-client-all</artifactId>
+            <version>7.1.2.Final</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--
         <dependency>
             <groupId>org.jboss.naming</groupId>
             <artifactId>jnp-client</artifactId>
             <version>5.0.5.Final</version>
             <scope>compile</scope>
         </dependency>
+        -->
         <!-- test -->
         <dependency>
             <groupId>junit</groupId>

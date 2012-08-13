@@ -6,8 +6,8 @@ package com.swesource.sample.jee.jms;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
 import javax.jms.MessageProducer;
-import javax.jms.Queue;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.Context;
@@ -29,18 +29,27 @@ public class SampleProducer {
     public static void main(String[] argv) throws Exception {
         System.out.println("SampleProducer about to send messages.");
         Properties p = new Properties( );
-        p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jnp.interfaces.NamingContextFactory");
-        p.put(Context.URL_PKG_PREFIXES," org.jboss.naming:org.jnp.interfaces");
-        p.put(Context.PROVIDER_URL, "jnp://localhost:1099");
+        //p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jnp.interfaces.NamingContextFactory");
+        p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
+        //p.put(Context.URL_PKG_PREFIXES," org.jboss.naming:org.jnp.interfaces");
+        //p.put(Context.PROVIDER_URL, "jnp://localhost:1099");
+        p.put(Context.PROVIDER_URL, "remote://localhost:4447");
+        // Credentials should not(!) be added through properties as below.
+        //p.put(Context.SECURITY_PRINCIPAL, "admin");
+        //p.put(Context.SECURITY_CREDENTIALS, "admin2");
         InitialContext jndiContext = new InitialContext(p);
-        ConnectionFactory connectionFactory = (ConnectionFactory)jndiContext.lookup("/ConnectionFactory");
-        Connection connection = connectionFactory.createConnection();
+        ConnectionFactory connectionFactory = (ConnectionFactory)jndiContext.lookup("jms/RemoteConnectionFactory");
+        Connection connection = connectionFactory.createConnection("admin", "admin2");
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Queue queue = (Queue)jndiContext.lookup("/queue/SampleQueue");
-        MessageProducer producer = session.createProducer(queue);
+        Destination destination = (Destination)jndiContext.lookup("jms/queue/SampleQueue");
+        jndiContext.close();
+        //Queue queue = (Queue)jndiContext.lookup("jms/queue/SampleQueue");
+        //MessageProducer producer = session.createProducer(queue);
+        MessageProducer producer = session.createProducer(destination);
         TextMessage message = session.createTextMessage();
         for (int i=0 ; i<10 ; i++) {
-            message.setText("Message" + i);
+            //message.setText("Message" + i);
+            message.setText("" + i);
             System.out.println("SampleProducer sends " + message.getText());
             producer.send(message);
         }

@@ -3,12 +3,6 @@
     <output-path>$PROJECT_DIR$/sample-jee-relay-ejb/target</output-path>
     <root id="archive" name="sample-jee-relay-ejb-1.0-SNAPSHOT.jar">
       <element id="artifact" artifact-name="sample-jee-relay-ejb:ejb exploded" />
-      <element id="archive" name="sample-jee-server-ejb-remote-1.0-SNAPSHOT.jar">
-        <element id="module-output" name="sample-jee-server-ejb-remote" />
-      </element>
-      <element id="archive" name="sample-jee-relay-ejb-remote-1.0-SNAPSHOT.jar">
-        <element id="module-output" name="sample-jee-relay-ejb-remote" />
-      </element>
     </root>
   </artifact>
 </component>
