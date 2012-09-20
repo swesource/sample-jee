@@ -7,6 +7,7 @@ import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.io.Serializable;
 
 /**
  *
@@ -15,7 +16,9 @@ import javax.persistence.PersistenceContext;
 @Local(ServerSlsbLocal.class)
 @Remote(ServerSlsbRemote.class)
 @Clustered
-public class ServerSlsbBean implements ServerSlsbLocal, ServerSlsbRemote {
+public class ServerSlsbBean implements ServerSlsbLocal, ServerSlsbRemote, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @PersistenceContext(unitName = "samplePU")
     EntityManager em;

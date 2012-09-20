@@ -27,23 +27,23 @@ that normally are server-based components acting as clients.
 Five modules containing various server-client(s) to other server component(s) - in sample-jee-relay-* or
 sample-jee-server-*.
 
-#### EAR: sample-jee-client-ear
+#### sample-jee-client-ear
 
 The EAR of these client modules.
 
-#### EJB: sample-jee-client-ejb
+#### sample-jee-client-ejb
 
 EJBs.
 
-#### EJB interfaces: sample-jee-client-ejb-remote
+#### sample-jee-client-ejb-remote
 
 The remote interfaces of the EJBs in sample-jee-client-ejb.
 
-#### Utilities: sample-jee-client-util
+#### sample-jee-client-util
 
-Various util classes utilised by the components in this client EAR.
+Various utility classes utilised by the components in this client EAR.
 
-#### WEB: sample-jee-client-web
+#### sample-jee-client-web
 
 Web material and components (e g HTML-pages and Servlets) acting as clients to components in sample-jee-relay-*
 and/or sample-jee-server-*.
@@ -52,40 +52,40 @@ and/or sample-jee-server-*.
 
 Three moudules (ear, ejb, ejb-remote)
 
-#### EAR: sample-jee-relay-ear
+#### sample-jee-relay-ear
 
 The EAR of these "relay"-server modules.
 
-#### EJB: sample-jee-relay-ejb
+#### sample-jee-relay-ejb
 
 EJBs.
 
-#### EJB remote interfaces: sample-jee-relay-ejb-remote
+#### sample-jee-relay-ejb-remote
 
 The remote interfaces of the EJBs in sample-jee-relay-ejb.
 
 ### sample-jee-server-*
 
-Four modules:
-
-#### EAR: sample-jee-server-ear
+#### sample-jee-server-ear
 
 The EAR of these server modules.
 
-#### EJB: sample-jee-server-ejb
+#### sample-jee-server-ejb
 
 EJBs.
 
-#### EJB local interfaces: sample-jee-server-ejb-local
+#### sample-jee-server-ejb-local
 
 The local interfaces of the EJBs in sample-jee-server-ejb.
 
-#### EJB remote interfaces: sample-jee-server-ejb-remote
+#### sample-jee-server-ejb-remote
 
 The remote interfaces of the EJBs in sample-jee-server-ejb.
 
-### sample-jee-standalone-*
-
-One module: (expect a sample-jee-standalone-jms-client soon)
-
 #### sample-jee-standalone-ejb-client
+
+Standalone clients for SLSB & SFSB EJBs.
+
+### sample-jee-standalone-jms-client
+
+Standalone clients for JMS queues/topics in HornetQ and ActiveMQ.

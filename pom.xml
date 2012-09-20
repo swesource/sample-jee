@@ -32,6 +32,7 @@
         <module>${project.artifactId}-server-ejb-remote</module>
         <!--<module>${project.artifactId}-server-web</module>-->
         <module>${project.artifactId}-standalone-ejb-client</module>
+        <module>${project.artifactId}-standalone-jms-client</module>
     </modules>
 
     <licenses>

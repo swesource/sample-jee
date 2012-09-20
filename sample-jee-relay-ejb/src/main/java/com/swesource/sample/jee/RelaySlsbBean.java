@@ -45,7 +45,7 @@ public class RelaySlsbBean implements RelaySlsbRemote {
             final Hashtable props = new Hashtable();
             props.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
             final Context context = new javax.naming.InitialContext(props);
-            String path = "ejb:sample-jee/sample-jee-ejb-1.0-SNAPSHOT//SlsbOneBean!com.swesource.sample.jee.ServerSlsbRemote";
+            String path = "ejb:sample-jee-server/sample-jee-server-ejb-1.0-SNAPSHOT//SlsbOneBean!com.swesource.sample.jee.ServerSlsbRemote";
             final ServerSlsbRemote bean = (ServerSlsbRemote) context.lookup(path);
 
             // invoke on the bean

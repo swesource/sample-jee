@@ -41,7 +41,7 @@ public class SfsbClientServlet extends HttpServlet {
             // https://docs.jboss.org/author/display/AS71/EJB+invocations+from+a+remote+client+using+JNDI
             
             // For remote ejbs (other container)
-            String path = "ejb:sample-jee/sample-jee-ejb-1.0-SNAPSHOT//SfsbOneBean!com.swesource.sample.jee.ServerSfsbRemote?stateful";
+            String path = "ejb:sample-jee-server/sample-jee-server-ejb-1.0-SNAPSHOT//SfsbOneBean!com.swesource.sample.jee.ServerSfsbRemote?stateful";
             final ServerSfsbRemote bean = (ServerSfsbRemote) context.lookup(path);
 
             /*

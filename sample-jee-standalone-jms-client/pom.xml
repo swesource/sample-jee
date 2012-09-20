@@ -9,9 +9,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>sample-jee-standalone-ejb-client</artifactId>
+    <artifactId>sample-jee-standalone-jms-client</artifactId>
     <packaging>jar</packaging>
-    <name>${project.parent.artifactId} Standalone EJB Client</name>
+    <name>${project.parent.artifactId} Standalone JMS Client</name>
 
     <build>
         <plugins>
@@ -28,37 +28,25 @@
     </build>
 
     <dependencies>
-        <!-- remote EJB interfaces -->
+        <!-- jms -->
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_1.1_spec</artifactId>
+            <scope>compile</scope>
         </dependency>
-        <!-- ejb -->
-        <!--
-        <dependency>
-            <groupId>org.jboss.spec.javax.ejb</groupId>
-            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        -->
-        <!-- EJB client JAR - alt1 -->
+        <!-- Jboss HornetQ -->
         <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-client-all</artifactId>
             <version>${jbossas-version}</version>
             <scope>compile</scope>
         </dependency>
-        <!-- EJB client JAR - alt2 -->
-        <!--
+        <!-- Apache ActiveMQ -->
         <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-ejb-client-bom</artifactId>
-            <version>${jbossas-version}</version>
-            <scope>compile</scope>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-core</artifactId>
+            <version>5.6.0</version>
         </dependency>
-        -->
-
         <!-- test -->
         <dependency>
             <groupId>junit</groupId>

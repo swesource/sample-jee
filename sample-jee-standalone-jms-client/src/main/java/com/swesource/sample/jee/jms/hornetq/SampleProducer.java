@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.swesource.sample.jee.jms;
+package com.swesource.sample.jee.jms.hornetq;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -33,16 +33,15 @@ public class SampleProducer {
         p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
         //p.put(Context.URL_PKG_PREFIXES," org.jboss.naming:org.jnp.interfaces");
         //p.put(Context.PROVIDER_URL, "jnp://localhost:1099");
-        p.put(Context.PROVIDER_URL, "remote://localhost:4447");
+        p.put(Context.PROVIDER_URL, "remote://127.0.0.1:4447");
         // Credentials should not(!) be added through properties as below.
         //p.put(Context.SECURITY_PRINCIPAL, "admin");
         //p.put(Context.SECURITY_CREDENTIALS, "admin2");
-        InitialContext jndiContext = new InitialContext(p);
+        Context jndiContext = new InitialContext(p);
         ConnectionFactory connectionFactory = (ConnectionFactory)jndiContext.lookup("jms/RemoteConnectionFactory");
         Connection connection = connectionFactory.createConnection("admin", "admin2");
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         Destination destination = (Destination)jndiContext.lookup("jms/queue/SampleQueue");
-        jndiContext.close();
         //Queue queue = (Queue)jndiContext.lookup("jms/queue/SampleQueue");
         //MessageProducer producer = session.createProducer(queue);
         MessageProducer producer = session.createProducer(destination);
