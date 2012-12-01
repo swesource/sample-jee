@@ -29,16 +29,16 @@
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-relay-ejb</artifactId>
                         </ejbModule>
-                        <javaModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-relay-ejb-remote</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
-                        <javaModule>
+                        </jarModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
+                        </jarModule>
                     </modules>
                 </configuration>
             </plugin>

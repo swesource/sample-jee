@@ -14,7 +14,7 @@
         A sample Java EE project.
         See the README for a more complete description.
     </description>
-    <url>http://code.swesource.com/swesource/sample-jee</url>
+    <url>http://github.com/swesource/sample-jee</url>
     <inceptionYear>2012</inceptionYear>
 
     <modules>
@@ -27,6 +27,7 @@
         <module>${project.artifactId}-relay-ejb</module>
         <module>${project.artifactId}-relay-ejb-remote</module>
         <module>${project.artifactId}-server-ear</module>
+        <module>${project.artifactId}-server-domain</module>
         <module>${project.artifactId}-server-ejb</module>
         <module>${project.artifactId}-server-ejb-local</module>
         <module>${project.artifactId}-server-ejb-remote</module>
@@ -121,7 +122,7 @@
                     <artifactId>jboss-as-maven-plugin</artifactId>
                     <!-- TODO: Change to jbossas-version as soon as it is available! -->
                     <!-- <version>${jbossas-version}</version> -->
-                    <version>7.1.1.Final</version>
+                    <version>7.3.Final</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -137,6 +138,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>2.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.sonar</groupId>
+                    <artifactId>sonar-maven3-plugin</artifactId>
+                    <version>3.3</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -186,6 +192,13 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.10</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>1.0.3.Final</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>

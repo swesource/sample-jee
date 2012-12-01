@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="sample-jee-client-web:war exploded">
-    <output-path>$PROJECT_DIR$/sample-jee-client-web/target/sample-jee-client-web-1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/sample-jee-client-web/target/sample-jee-client</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="sample-jee-client-web/web/Web" />
       <element id="directory" name="WEB-INF">

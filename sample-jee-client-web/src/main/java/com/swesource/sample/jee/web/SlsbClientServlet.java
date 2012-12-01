@@ -5,6 +5,7 @@ import com.swesource.sample.jee.ServerSlsbRemote;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
+import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Hashtable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -20,50 +23,68 @@ import java.util.Hashtable;
 @WebServlet(value = "/SlsbClientServlet")
 public class SlsbClientServlet extends HttpServlet {
 
+    private static final Logger LOGGER = Logger.getLogger(SlsbClientServlet.class.getName());
+
     private ServerSlsbRemote serverSlsbProxy;
     private RelaySlsbRemote relaySlsbProxy;
 
     @Override
     public void init() throws ServletException {
+        final Hashtable properties = new Hashtable();
+        properties.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+        final Context context;
         try {
-            final Hashtable properties = new Hashtable();
-            properties.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
-            final Context context = new InitialContext(properties);
+            context = new InitialContext(properties);
+        } catch (NamingException e) {
+            LOGGER.log(Level.SEVERE, "Error creating initial context", e);
+            throw new ServletException(e);
+        }
 
-            // Lookup the beans using the ejb: namespace syntax which is explained here
-            // https://docs.jboss.org/author/display/AS71/EJB+invocations+from+a+remote+client+using+JNDI
+        // Lookup the beans using the ejb: namespace syntax which is explained here
+        // https://docs.jboss.org/author/display/AS71/EJB+invocations+from+a+remote+client+using+JNDI
 
-            String serverSlsbPath = "ejb:sample-jee-server/sample-jee-server-ejb-1.0-SNAPSHOT//ServerSlsbBean!com.swesource.sample.jee.ServerSlsbRemote";
-            serverSlsbProxy = (ServerSlsbRemote) context.lookup(serverSlsbPath);
-
-            String relaySlsbPath = "ejb:sample-jee-relay/sample-jee-relay-ejb-1.0-SNAPSHOT//RelaySlsbBean!com.swesource.sample.jee.RelaySlsbRemote";
+        String relaySlsbPath = "ejb:sample-jee-relay/sample-jee-relay-ejb-1.0-SNAPSHOT//RelaySlsbBean!com.swesource.sample.jee.RelaySlsbRemote";
+        try {
             relaySlsbProxy = (RelaySlsbRemote) context.lookup(relaySlsbPath);
+        } catch (NamingException e) {
+            LOGGER.log(Level.SEVERE, "Error looking up RelaySlsbBean", e);
+            throw new ServletException(e);
+        }
 
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        String serverSlsbPath = "ejb:sample-jee-server/sample-jee-server-ejb-1.0-SNAPSHOT//ServerSlsbBean!com.swesource.sample.jee.ServerSlsbRemote";
+        try {
+            serverSlsbProxy = (ServerSlsbRemote) context.lookup(serverSlsbPath);
+        } catch (NamingException e) {
+            LOGGER.log(Level.SEVERE, "Error looking up ServerSlsbBean", e);
+            throw new ServletException(e);
         }
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String greeting = invokeOnServerBean();
         PrintWriter pw = response.getWriter();
+
+        // Call the relay bean
+        String callResponse = invokeRelayBean();
+        pw.write("SlsbClientServlet -> SlsbRelayBean.called (in remote EAR) -> SlsbOneBean.sayHello (in remote EAR) -> SlsbClientServlet -> [" + callResponse + "]\n");
+
+        // Call the server bean
+        String greeting = invokeServerBean();
         pw.write("SlsbClientServlet -> ServerSlsbBean.sayHello (in remote EAR) -> SlsbClientServlet -> [" + greeting + "]\n");
-        //String callResponse = invokeOnRelayBean();
-        //pw.write("SlsbClientServlet -> SlsbRelayBean.called (in remote EAR) -> SlsbOneBean.sayHello (in remote EAR) -> SlsbClientServlet -> [" + callResponse + "]\n");
+
         pw.flush();
         pw.close();
     }
 
-    private String invokeOnServerBean() {
+    private String invokeServerBean() {
         String greeting = serverSlsbProxy.sayHello();
-        System.out.println("SlsbClientServlet: Received greeting: " + greeting);
+        LOGGER.info("SlsbClientServlet: Received greeting: " + greeting);
         return greeting;
     }
 
-    private String invokeOnRelayBean() {
+    private String invokeRelayBean() {
         final String callResponse = relaySlsbProxy.callEjbInSameAppSrvButOtherEar();
-        System.out.println("SlsbClientServlet: Received call response: " + callResponse);
+        LOGGER.info("SlsbClientServlet: Received call response: " + callResponse);
         return callResponse;
     }
 }

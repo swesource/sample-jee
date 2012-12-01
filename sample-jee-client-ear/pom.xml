@@ -25,21 +25,21 @@
                     <version>${jee-version}</version>
                     <defaultJavaBundleDir>/lib</defaultJavaBundleDir>
                     <modules>
-                        <javaModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-client-ejb-remote</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
-                        <javaModule>
+                        </jarModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
-                        <javaModule>
+                        </jarModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-client-util</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
+                        </jarModule>
                         <ejbModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-client-ejb</artifactId>

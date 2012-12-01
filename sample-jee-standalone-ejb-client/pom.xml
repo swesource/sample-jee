@@ -46,7 +46,9 @@
         <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-client-all</artifactId>
+            <!--
             <version>${jbossas-version}</version>
+            -->
             <scope>compile</scope>
         </dependency>
         <!-- EJB client JAR - alt2 -->

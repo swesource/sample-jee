@@ -7,8 +7,8 @@ import javax.ejb.Remote;
  */
 @Remote
 public interface RelaySlsbRemote {
-    public String called();
-    public String callEjbInSameEar();
-    public String callEjbInOtherAppSrv();
-    public String callEjbInSameAppSrvButOtherEar();
+    String called();
+    String callEjbInSameEar();
+    String callEjbInOtherAppSrv();
+    String callEjbInSameAppSrvButOtherEar();
 }

@@ -17,6 +17,13 @@
     <name>${project.parent.artifactId} Server EJB Remote JAR</name>
 
     <dependencies>
+        <!-- domain model -->
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+            <version>${project.parent.version}</version>
+            <scope>provided</scope>
+        </dependency>
         <!-- ejb -->
         <dependency>
             <groupId>org.jboss.spec.javax.ejb</groupId>

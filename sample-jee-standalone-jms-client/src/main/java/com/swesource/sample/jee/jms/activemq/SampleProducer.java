@@ -1,61 +1,64 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.swesource.sample.jee.jms.activemq;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.activemq.protobuf.compiler.CommandLineSupport;
 import org.apache.activemq.util.IndentPrinter;
 
-import javax.jms.Connection;
-import javax.jms.DeliveryMode;
-import javax.jms.Destination;
-import javax.jms.MessageProducer;
-import javax.jms.Session;
-import javax.jms.TextMessage;
+import javax.jms.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.logging.Logger;
 
 /**
  *
- * @author arnie
  */
 public class SampleProducer extends Thread {
 
-    private static int parallelThreads = 1;
+    private static final Logger LOGGER = Logger.getLogger(SampleProducer.class.getName());
+    private static final int ERROR = -1;
+    private static final int MESSAGE_COUNT = 10;
+    private static final int MESSAGE_SIZE = 255;
+    private static final int PARALLELL_THREADS = 1;
+    private static final int THREAD_SLEEP_MS = 1000;
+    private static final int MAX_MSG_LENGTH = 50;
+
+    private static int parallelThreads = PARALLELL_THREADS;
     private String username = ActiveMQConnection.DEFAULT_USER;
     private String password = ActiveMQConnection.DEFAULT_PASSWORD;
-    private String url = ActiveMQConnection.DEFAULT_BROKER_URL;    // failover://tcp://localhost:61616
+    /* failover://tcp://localhost:61616 */
+    private String url = ActiveMQConnection.DEFAULT_BROKER_URL;
     private boolean transacted = true;
     private boolean persistent = true;
-    private boolean topic = false; // true=>topic ; false=>queue
+    /* true=>topic ; false=>queue */
+    private boolean topic = false;
     private Destination destination;
     private String subject = "SAMPLE.DEFAULT";
     private long timeToLive;
-    private int messageSize = 255;
+    private int messageSize = MESSAGE_SIZE;
     private boolean verbose = true;
         private static Object lockResults = new Object();
-    private int messageCount = 10;
+    private int messageCount = MESSAGE_COUNT;
     private long sleepTime;
 
     public static void main(String[] args) {
-        System.out.println("SampleProducer about to send messages.");
+        LOGGER.info("SampleProducer about to send messages.");
 
         ArrayList<SampleProducer> threads = new ArrayList();
         SampleProducer producer = new SampleProducer();
-        /*
+
         String[] unknown = CommandLineSupport.setOptions(producer, args);
         if (unknown.length > 0) {
-            System.out.println("Unknown options: " + Arrays.toString(unknown));
-            System.exit(-1);
+            LOGGER.info("Unknown options: " + Arrays.toString(unknown));
+            System.exit(ERROR);
         }
-        */
-        //producer.showParameters();
+
+        producer.showParameters();
         for (int threadCount = 1; threadCount <= parallelThreads; threadCount++) {
             producer = new SampleProducer();
-            //CommandLineSupport.setOptions(producer, args);
+            CommandLineSupport.setOptions(producer, args);
             producer.start();
             threads.add(producer);
         }
@@ -70,25 +73,25 @@ public class SampleProducer extends Thread {
                 }
             }
             if (running <= 0) {
-                System.out.println("All threads completed their work");
+                LOGGER.info("All threads completed their work");
                 break;
             }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(THREAD_SLEEP_MS);
             } catch (Exception e) {
             }
         }
     }
 
     public void showParameters() {
-        System.out.println("Connecting to URL: " + url + " (" + username + ":" + password + ")");
-        System.out.println("Publishing a Message with size " + messageSize + " to " + (topic ? "topic" : "queue") + ": " + subject);
-        System.out.println("Using " + (persistent ? "persistent" : "non-persistent") + " messages");
-        System.out.println("Sleeping between publish " + sleepTime + " ms");
-        System.out.println("Running " + parallelThreads + " parallel threads");
+        LOGGER.info("Connecting to URL: " + url + " (" + username + ":" + password + ")");
+        LOGGER.info("Publishing a Message with size " + messageSize + " to " + (topic ? "topic" : "queue") + ": " + subject);
+        LOGGER.info("Using " + (persistent ? "persistent" : "non-persistent") + " messages");
+        LOGGER.info("Sleeping between publish " + sleepTime + " ms");
+        LOGGER.info("Running " + parallelThreads + " parallel threads");
 
         if (timeToLive != 0) {
-            System.out.println("Messages time to live " + timeToLive + " ms");
+            LOGGER.info("Messages time to live " + timeToLive + " ms");
         }
     }
 
@@ -122,26 +125,25 @@ public class SampleProducer extends Thread {
             // Start sending messages
             sendLoop(session, producer);
 
-            System.out.println("[" + this.getName() + "] Done.");
+            LOGGER.info("[" + this.getName() + "] Done.");
 
             synchronized (lockResults) {
                 ActiveMQConnection c = (ActiveMQConnection) connection;
-                System.out.println("[" + this.getName() + "] Results:\n");
+                LOGGER.info("[" + this.getName() + "] Results:\n");
                 c.getConnectionStats().dump(new IndentPrinter());
             }
 
         } catch (Exception e) {
-            System.out.println("[" + this.getName() + "] Caught: " + e);
-            e.printStackTrace();
+            LOGGER.info("[" + this.getName() + "] Caught: " + e);
         } finally {
             try {
                 connection.close();
-            } catch (Throwable ignore) {
+            } catch (JMSException ignore) {
             }
         }
     }
 
-    protected void sendLoop(Session session, MessageProducer producer) throws Exception {
+    protected void sendLoop(Session session, MessageProducer producer) throws JMSException, InterruptedException {
 
         for (int i = 0; i < messageCount || messageCount == 0; i++) {
 
@@ -149,16 +151,16 @@ public class SampleProducer extends Thread {
 
             if (verbose) {
                 String msg = message.getText();
-                if (msg.length() > 50) {
-                    msg = msg.substring(0, 50) + "...";
+                if (msg.length() > MAX_MSG_LENGTH) {
+                    msg = msg.substring(0, MAX_MSG_LENGTH) + "...";
                 }
-                System.out.println("[" + this.getName() + "] Sending message: '" + msg + "'");
+                LOGGER.info("[" + this.getName() + "] Sending message: '" + msg + "'");
             }
 
             producer.send(message);
 
             if (transacted) {
-                System.out.println("[" + this.getName() + "] Committing " + messageCount + " messages");
+                LOGGER.info("[" + this.getName() + "] Committing " + messageCount + " messages");
                 session.commit();
             }
             Thread.sleep(sleepTime);
@@ -207,7 +209,8 @@ public class SampleProducer extends Thread {
 
     public void setParallelThreads(int parallelThreads) {
         if (parallelThreads < 1) {
-            parallelThreads = 1;
+            this.parallelThreads = 1;
+            return;
         }
         this.parallelThreads = parallelThreads;
     }

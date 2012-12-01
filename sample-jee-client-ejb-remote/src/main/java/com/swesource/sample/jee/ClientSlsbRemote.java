@@ -7,8 +7,10 @@ import javax.ejb.Remote;
  */
 @Remote
 public interface ClientSlsbRemote {
-    public String called();
-    public String callEjbInSameEar();
-    public String callEjbInOtherAppSrv();
-    public String callEjbInSameAppSrvButOtherEar();
+    String called();
+    String callEjbInSameEar();
+    String callEjbInOtherAppSrv();
+    String callEjbInSameAppSrvButOtherEar();
+    String sayHello();
+    String sayHello(String name);
 }

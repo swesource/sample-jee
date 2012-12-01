@@ -18,9 +18,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="sample-jee-server-domain" />
     <orderEntry type="module" module-name="sample-jee-server-ejb-local" />
     <orderEntry type="module" module-name="sample-jee-server-ejb-remote" />
     <orderEntry type="module" module-name="sample-jee-server-ejb" />
+    <orderEntry type="library" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" level="project" />
   </component>
 </module>
 

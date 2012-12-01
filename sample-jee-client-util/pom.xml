@@ -23,5 +23,11 @@
             <artifactId>jboss-ejb-client</artifactId>
             <scope>compile</scope>
         </dependency>
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>

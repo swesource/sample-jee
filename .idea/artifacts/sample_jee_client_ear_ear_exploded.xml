@@ -23,7 +23,7 @@
       <element id="directory" name="sample-jee-client-ejb-1.0-SNAPSHOT.jar">
         <element id="artifact" artifact-name="sample-jee-client-ejb:ejb exploded" />
       </element>
-      <element id="directory" name="sample-jee-client-web-1.0-SNAPSHOT.war">
+      <element id="directory" name="sample-jee-client.war">
         <element id="artifact" artifact-name="sample-jee-client-web:war exploded" />
       </element>
     </root>

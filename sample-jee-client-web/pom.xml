@@ -26,6 +26,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>${project.parent.artifactId}-client</finalName>
     </build>
 
     <dependencies>

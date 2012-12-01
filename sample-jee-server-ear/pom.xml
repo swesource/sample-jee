@@ -27,16 +27,21 @@
                     -->
                     <version>${jee-version}</version>
                     <modules>
-                        <javaModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-server-ejb-local</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
-                        <javaModule>
+                        </jarModule>
+                        <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
                             <bundleDir>lib</bundleDir>
-                        </javaModule>
+                        </jarModule>
+                        <jarModule>
+                            <groupId>${project.parent.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+                            <bundleDir>lib</bundleDir>
+                        </jarModule>
                         <ejbModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-server-ejb</artifactId>
@@ -51,19 +56,60 @@
                     </modules>
                 </configuration>
             </plugin>
+            <!-- Plugin for deployment to AS7. See: -->
+            <!-- https://docs.jboss.org/jbossas/7/plugins/maven/latest/index.html -->
+            <!--
             <plugin>
                 <groupId>org.jboss.as.plugins</groupId>
                 <artifactId>jboss-as-maven-plugin</artifactId>
-                <configuration>
-                    <filename>${project.artifactId}.ear</filename>
-                    <skip>false</skip>
-                </configuration>
+                <executions>
+                    <execution>
+                        <id>deploy-server-ear</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>deploy-driver-postgresql</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <groupId>postgresql</groupId>
+                            <artifactId>postgresql</artifactId>
+                            <name>postgresql.jar</name>
+                        </configuration>
+                        <goals>
+                            <goal>deploy-artifact</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>deploy-jms-queue-SampleQueue</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>add-resource</goal>
+                        </goals>
+                        <configuration>
+                            <address>subsystem=messaging,hornetq-server=default,jms-queue=SampleQueue</address>
+                            <properties>
+                                <entries>!!["java:jboss/queue/SampleQueue"]</entries>
+                                <durable>true</durable>
+                            </properties>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
+            -->
         </plugins>
-        <finalName>${parent.artifactId}-server</finalName>
+        <finalName>${project.parent.artifactId}-server</finalName>
     </build>
 
     <dependencies>
+        <!-- domain model -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <!-- local EJB interfaces -->
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -91,5 +137,11 @@
             <type>war</type>
         </dependency>
         -->
+        <!-- postgresql -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901-1.jdbc4</version>
+        </dependency>
     </dependencies>
 </project>

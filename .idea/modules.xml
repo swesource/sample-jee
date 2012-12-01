@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/sample-jee-relay-ear/sample-jee-relay-ear.iml" filepath="$PROJECT_DIR$/sample-jee-relay-ear/sample-jee-relay-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-relay-ejb/sample-jee-relay-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-relay-ejb/sample-jee-relay-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-relay-ejb-remote/sample-jee-relay-ejb-remote.iml" filepath="$PROJECT_DIR$/sample-jee-relay-ejb-remote/sample-jee-relay-ejb-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-domain/sample-jee-server-domain.iml" filepath="$PROJECT_DIR$/sample-jee-server-domain/sample-jee-server-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ear/sample-jee-server-ear.iml" filepath="$PROJECT_DIR$/sample-jee-server-ear/sample-jee-server-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" />
