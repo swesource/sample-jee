@@ -1,6 +1,7 @@
 package com.swesource.sample.jee.ejb;
 
 import com.swesource.sample.jee.ServerSlsbRemote;
+import com.swesource.sample.jee.domain.User;
 
 import javax.naming.Context;
 import javax.naming.NamingException;
@@ -40,13 +41,21 @@ public final class ServerSlsbClient {
             System.exit(ERROR_EXIT_CODE);
         }
         String response = slsb.sayHello();
+
+        String username = "Dude";
+        User user1 = new User();
+        user1.setUsername(username);
+        slsb.persistUser(user1);
+        User user2 = slsb.findUserWithUsername(username);
+
         try {
             jndiContext.close();
         } catch (NamingException e) {
             LOGGER.log(Level.SEVERE, e.toString(), e);
             System.exit(ERROR_EXIT_CODE);
         }
-        LOGGER.info("ServerSlsbClient: " + response);
+        LOGGER.info("ServerSlsbClient says: " + response);
+        LOGGER.info("ServerSlsbClient user: " + user2.getUsername());
         LOGGER.info("ServerSlsbClient done.");
     }
 }

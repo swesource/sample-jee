@@ -13,6 +13,7 @@
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/sample-jee-server-ear" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/sample-jee-server-ejb-remote" />
     <file type="web" url="file://$PROJECT_DIR$/sample-jee-client-web" />
+    <file type="web" url="file://$PROJECT_DIR$/sample-jee-server-web" />
   </component>
   <component name="IdProvider" IDEtalkID="923B342CA588806CE107504D8EF095DE" />
   <component name="JavadocGenerationManager">
@@ -36,11 +37,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
-    <option name="activeProfiles">
-      <list>
-        <option value="arquillian-jbossas-managed" />
       </list>
     </option>
   </component>

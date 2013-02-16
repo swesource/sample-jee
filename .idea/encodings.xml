@@ -15,8 +15,13 @@
     <file url="file://$PROJECT_DIR$/sample-jee-server-ejb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sample-jee-server-ejb-local" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sample-jee-server-ejb-remote" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-server-ejb-ws-endpoint" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-server-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sample-jee-standalone-jms-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-standalone-jmx-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-standalone-rs-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-jee-standalone-ws-client" charset="UTF-8" />
   </component>
 </project>
 

@@ -31,9 +31,13 @@
         <module>${project.artifactId}-server-ejb</module>
         <module>${project.artifactId}-server-ejb-local</module>
         <module>${project.artifactId}-server-ejb-remote</module>
-        <!--<module>${project.artifactId}-server-web</module>-->
+        <module>${project.artifactId}-server-ejb-ws-endpoint</module>
+        <module>${project.artifactId}-server-web</module>
         <module>${project.artifactId}-standalone-ejb-client</module>
         <module>${project.artifactId}-standalone-jms-client</module>
+        <module>${project.artifactId}-standalone-jmx-client</module>
+        <module>${project.artifactId}-standalone-rs-client</module>
+        <module>${project.artifactId}-standalone-ws-client</module>
     </modules>
 
     <licenses>
@@ -120,7 +124,7 @@
                 <plugin>
                     <groupId>org.jboss.as.plugins</groupId>
                     <artifactId>jboss-as-maven-plugin</artifactId>
-                    <!-- TODO: Change to jbossas-version as soon as it is available! -->
+                    <!-- TODO: Change to jbossas-version as soon as it is available/compatible! -->
                     <!-- <version>${jbossas-version}</version> -->
                     <version>7.3.Final</version>
                 </plugin>

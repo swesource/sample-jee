@@ -2,6 +2,40 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ear/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ear/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-ear/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-ear/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-util/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-util/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-standalone-jms-client/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-standalone-jms-client/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ejb-remote/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ejb-remote/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ejb/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ejb/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-relay-ear/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-relay-ear/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-ejb-remote/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-ejb-remote/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-relay-ejb-remote/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-relay-ejb-remote/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-relay-ejb/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-relay-ejb/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-domain/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-domain/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-web/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-web/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-ejb/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-client-ejb/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ejb-local/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-server-ejb-local/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-standalone-jmx-client/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-jee-standalone-jmx-client/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+    </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="?*.properties" />
@@ -15,10 +49,60 @@
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
     </wildcardResourcePatterns>
-    <annotationProcessing enabled="false" useClasspath="true" />
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.6" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="sample-jee-client-ear" />
+        <module name="sample-jee-client-ejb" />
+        <module name="sample-jee-client-ejb-remote" />
+        <module name="sample-jee-client-util" />
+        <module name="sample-jee-client-web" />
+        <module name="sample-jee-relay-ear" />
+        <module name="sample-jee-relay-ejb" />
+        <module name="sample-jee-relay-ejb-remote" />
+        <module name="sample-jee-server-domain" />
+        <module name="sample-jee-server-ear" />
+        <module name="sample-jee-server-ejb" />
+        <module name="sample-jee-server-ejb-local" />
+        <module name="sample-jee-server-ejb-remote" />
+        <module name="sample-jee-server-ejb-ws-endpoint" />
+        <module name="sample-jee-server-web" />
+        <module name="sample-jee-standalone-ejb-client" />
+        <module name="sample-jee-standalone-jms-client" />
+        <module name="sample-jee-standalone-jmx-client" />
+        <module name="sample-jee-standalone-rs-client" />
+        <module name="sample-jee-standalone-ws-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sample-jee" target="1.6" />
+      <module name="sample-jee-client-ear" target="1.6" />
+      <module name="sample-jee-client-ejb" target="1.6" />
+      <module name="sample-jee-client-ejb-remote" target="1.6" />
+      <module name="sample-jee-client-util" target="1.6" />
+      <module name="sample-jee-client-web" target="1.6" />
+      <module name="sample-jee-relay-ear" target="1.6" />
+      <module name="sample-jee-relay-ejb" target="1.6" />
+      <module name="sample-jee-relay-ejb-remote" target="1.6" />
+      <module name="sample-jee-server-domain" target="1.6" />
+      <module name="sample-jee-server-ear" target="1.6" />
+      <module name="sample-jee-server-ejb" target="1.6" />
+      <module name="sample-jee-server-ejb-local" target="1.6" />
+      <module name="sample-jee-server-ejb-remote" target="1.6" />
+      <module name="sample-jee-server-ejb-ws-endpoint" target="1.6" />
+      <module name="sample-jee-server-web" target="1.6" />
+      <module name="sample-jee-standalone-ejb-client" target="1.6" />
+      <module name="sample-jee-standalone-jms-client" target="1.6" />
+      <module name="sample-jee-standalone-jmx-client" target="1.6" />
+      <module name="sample-jee-standalone-rs-client" target="1.6" />
+      <module name="sample-jee-standalone-ws-client" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

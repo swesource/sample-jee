@@ -41,6 +41,14 @@
             <artifactId>${project.parent.artifactId}-relay-ejb-remote</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!-- domain model -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+            <version>${project.parent.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
         <!-- jsf -->
         <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>

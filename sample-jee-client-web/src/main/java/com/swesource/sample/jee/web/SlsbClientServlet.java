@@ -2,6 +2,7 @@ package com.swesource.sample.jee.web;
 
 import com.swesource.sample.jee.RelaySlsbRemote;
 import com.swesource.sample.jee.ServerSlsbRemote;
+import com.swesource.sample.jee.domain.User;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -79,7 +80,14 @@ public class SlsbClientServlet extends HttpServlet {
     private String invokeServerBean() {
         String greeting = serverSlsbProxy.sayHello();
         LOGGER.info("SlsbClientServlet: Received greeting: " + greeting);
-        return greeting;
+
+        String username = "Dude";
+        User user1 = new User();
+        user1.setUsername(username);
+        serverSlsbProxy.persistUser(user1);
+        User user2 = serverSlsbProxy.findUserWithUsername(username);
+
+        return greeting + " from " + user2.getUsername();
     }
 
     private String invokeRelayBean() {

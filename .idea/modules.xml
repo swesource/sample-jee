@@ -16,8 +16,13 @@
       <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb/sample-jee-server-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb-local/sample-jee-server-ejb-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb-remote/sample-jee-server-ejb-remote.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb-remote/sample-jee-server-ejb-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-ejb-ws-endpoint/sample-jee-server-ejb-ws-endpoint.iml" filepath="$PROJECT_DIR$/sample-jee-server-ejb-ws-endpoint/sample-jee-server-ejb-ws-endpoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-server-web/sample-jee-server-web.iml" filepath="$PROJECT_DIR$/sample-jee-server-web/sample-jee-server-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-standalone-ejb-client/sample-jee-standalone-ejb-client.iml" filepath="$PROJECT_DIR$/sample-jee-standalone-ejb-client/sample-jee-standalone-ejb-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample-jee-standalone-jms-client/sample-jee-standalone-jms-client.iml" filepath="$PROJECT_DIR$/sample-jee-standalone-jms-client/sample-jee-standalone-jms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-standalone-jmx-client/sample-jee-standalone-jmx-client.iml" filepath="$PROJECT_DIR$/sample-jee-standalone-jmx-client/sample-jee-standalone-jmx-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-standalone-rs-client/sample-jee-standalone-rs-client.iml" filepath="$PROJECT_DIR$/sample-jee-standalone-rs-client/sample-jee-standalone-rs-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-standalone-ws-client/sample-jee-standalone-ws-client.iml" filepath="$PROJECT_DIR$/sample-jee-standalone-ws-client/sample-jee-standalone-ws-client.iml" />
     </modules>
   </component>
 </project>

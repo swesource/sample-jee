@@ -34,6 +34,12 @@
             <artifactId>${project.parent.artifactId}-server-ejb-remote</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!-- domain model -->
+        <dependency>
+            <groupId>com.swesource.sample</groupId>
+            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <!-- ejb -->
         <!--
         <dependency>

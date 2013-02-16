@@ -22,6 +22,8 @@
     <orderEntry type="module" module-name="sample-jee-server-ejb-local" />
     <orderEntry type="module" module-name="sample-jee-server-ejb-remote" />
     <orderEntry type="module" module-name="sample-jee-server-ejb" />
+    <orderEntry type="module" module-name="sample-jee-server-ejb-ws-endpoint" />
+    <orderEntry type="module" module-name="sample-jee-server-web" />
     <orderEntry type="library" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" level="project" />
   </component>
 </module>

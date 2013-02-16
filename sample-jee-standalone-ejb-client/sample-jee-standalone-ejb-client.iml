@@ -16,11 +16,12 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sample-jee-server-ejb-remote" />
+    <orderEntry type="module" module-name="sample-jee-server-domain" />
     <orderEntry type="library" name="Maven: org.jboss.as:jboss-as-client-all:7.1.2.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss:jboss-ejb-client:1.0.10.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.marshalling:jboss-marshalling:1.3.14.GA" level="project" />

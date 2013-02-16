@@ -13,9 +13,15 @@
         <element id="archive" name="sample-jee-server-ejb-remote-1.0-SNAPSHOT.jar">
           <element id="module-output" name="sample-jee-server-ejb-remote" />
         </element>
+        <element id="archive" name="sample-jee-server-ejb-ws-endpoint-1.0-SNAPSHOT.jar">
+          <element id="module-output" name="sample-jee-server-ejb-ws-endpoint" />
+        </element>
       </element>
       <element id="directory" name="sample-jee-server-ejb-1.0-SNAPSHOT.jar">
         <element id="artifact" artifact-name="sample-jee-server-ejb:ejb exploded" />
+      </element>
+      <element id="directory" name="sample-jee-server-web-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="sample-jee-server-web:war exploded" />
       </element>
       <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
     </root>

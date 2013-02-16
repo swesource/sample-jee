@@ -48,12 +48,17 @@
             <artifactId>${project.artifactId}-remote</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!-- WS endpoint interfaces -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.artifactId}-ws-endpoint</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <!-- domain model -->
         <dependency>
             <groupId>com.swesource.sample</groupId>
             <artifactId>${project.parent.artifactId}-server-domain</artifactId>
             <version>${project.parent.version}</version>
-            <scope>provided</scope>
         </dependency>
         <!-- cdi -->
         <dependency>
@@ -83,6 +88,18 @@
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- jpa provider - hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- hibernate core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
             <scope>provided</scope>
         </dependency>
         <!-- jsf -->
@@ -133,7 +150,7 @@
                 <dependency>
                     <groupId>org.jboss.as</groupId>
                     <artifactId>jboss-as-arquillian-container-managed</artifactId>
-                    <version>7.1.2.Final</version>
+                    <version>${jbossas-version}</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>

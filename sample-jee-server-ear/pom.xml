@@ -39,20 +39,24 @@
                         </jarModule>
                         <jarModule>
                             <groupId>${project.parent.groupId}</groupId>
-                            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+                            <artifactId>${project.parent.artifactId}-server-ejb-ws-endpoint</artifactId>
                             <bundleDir>lib</bundleDir>
+                        </jarModule>
+                        <jarModule>
+                            <groupId>${project.parent.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+                           <bundleDir>lib</bundleDir>
                         </jarModule>
                         <ejbModule>
                             <groupId>${project.parent.groupId}</groupId>
                             <artifactId>${project.parent.artifactId}-server-ejb</artifactId>
                         </ejbModule>
-                        <!--
                         <webModule>
                             <groupId>${project.parent.groupId}</groupId>
-                            <artifactId>${project.parent.artifactId}-web</artifactId>
-                            <contextRoot>/sample-jee</contextRoot>
+                            <artifactId>${project.parent.artifactId}-server-web</artifactId>
+                            <contextRoot>/sample-jee-server</contextRoot>
                         </webModule>
-                        -->
+
                     </modules>
                 </configuration>
             </plugin>
@@ -129,14 +133,13 @@
             <version>${project.parent.version}</version>
             <type>ejb</type>
         </dependency>
-        <!--
+        <!-- War -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${project.parent.artifactId}-web</artifactId>
+            <artifactId>${project.parent.artifactId}-server-web</artifactId>
             <version>${project.parent.version}</version>
             <type>war</type>
         </dependency>
-        -->
         <!-- postgresql -->
         <dependency>
             <groupId>postgresql</groupId>

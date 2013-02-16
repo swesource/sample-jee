@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.swesource.sample</groupId>
+        <artifactId>sample-jee</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>sample-jee-standalone-rs-client</artifactId>
+    <packaging>jar</packaging>
+    <name>${project.parent.artifactId} Standalone REST Client</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- domain model -->
+        <dependency>
+            <groupId>com.swesource.sample</groupId>
+            <artifactId>${project.parent.artifactId}-server-domain</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- EJB client JAR - alt1 -->
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-client-all</artifactId>
+            <!--
+            <version>${jbossas-version}</version>
+            -->
+            <scope>compile</scope>
+        </dependency>
+        <!-- EJB client JAR - alt2 -->
+        <!--
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-ejb-client-bom</artifactId>
+            <version>${jbossas-version}</version>
+            <scope>compile</scope>
+        </dependency>
+        -->
+        <!-- test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
