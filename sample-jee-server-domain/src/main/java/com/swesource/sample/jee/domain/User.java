@@ -23,6 +23,7 @@ public class User implements Serializable {
     private Long id;
 
     @Column(unique = true, nullable = false, length = USERNAME_MAX)
+    //@Column(nullable = false, length = USERNAME_MAX)
     @NotNull
     @Size(min = USERNAME_MIN, max = USERNAME_MAX)
     private String username;
@@ -45,6 +46,6 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User@" + hashCode() + " [id = " + id + "]";
+        return this.getClass().getName() + "@" + hashCode() + " [id = " + id + "]";
     }
 }

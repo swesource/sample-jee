@@ -16,6 +16,12 @@
     <name>${project.parent.artifactId} Server Domain Model JAR</name>
 
     <dependencies>
+        <!-- hibernate envers -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <!-- jpa -->
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>

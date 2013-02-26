@@ -30,5 +30,14 @@
             <artifactId>jboss-ejb-api_3.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!--
+        jpa - needed for java.persistence.CascadeType in
+        sample-jee-server-domain : com.swesource.sample.jee.domain.Person
+        -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

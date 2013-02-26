@@ -6,7 +6,6 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
-import javax.xml.ws.Holder;
 
 /**
  * @author arnie
@@ -27,8 +26,8 @@ public interface ServerWsEndpoint {
 
     @WebMethod
     public String wsWithParams(
-            @WebParam(name = "idParamAsString") String idAsString,
-            @WebParam(name = "idParamAsInteger")Holder<Integer> isAsInteger);
+            @WebParam(name = "idParamAsString") String idParamAsString,
+            @WebParam(name = "idParamAsInteger")Integer idParamAsInteger);
 
     @WebMethod
     @WebResult

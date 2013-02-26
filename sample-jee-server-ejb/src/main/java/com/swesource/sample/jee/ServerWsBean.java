@@ -1,16 +1,15 @@
 package com.swesource.sample.jee;
 
-import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.jws.WebService;
-import javax.xml.ws.Holder;
 
 /**
  * @author arnie
  */
 @Stateless
-@Remote(ServerWsEndpoint.class)
+//@Remote(ServerWsEndpoint.class)
 @WebService(
+        //name = "ServerWs"
         //serviceName = "ServerWebServiceBean",
         endpointInterface = "com.swesource.sample.jee.ServerWsEndpoint")
 public class ServerWsBean implements ServerWsEndpoint {
@@ -26,7 +25,9 @@ public class ServerWsBean implements ServerWsEndpoint {
     }
 
     @Override
-    public String wsWithParams(String idAsString, Holder<Integer> isAsInteger) {
+    public String wsWithParams(
+            String idParamAsString,
+            Integer idParamAsInteger) {
         return "Return from wsWithParams()";
     }
 

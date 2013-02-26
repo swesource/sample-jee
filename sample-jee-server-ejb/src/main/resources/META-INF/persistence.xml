@@ -7,6 +7,8 @@
 	<persistence-unit name="samplePU" transaction-type="JTA">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+        <class>com.swesource.sample.jee.domain.Address</class>
+        <class>com.swesource.sample.jee.domain.Person</class>
         <class>com.swesource.sample.jee.domain.User</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
@@ -17,6 +19,10 @@
 			<property name="jboss.entity.manager.factory.jndi.name" value="java:jboss/datasources/sampleEMF"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 			-->
+            <property name="org.hibernate.envers.audit_strategy"
+                      value="org.hibernate.envers.strategy.ValidityAuditStrategy"/>
+            <property name="org.hibernate.envers.audit_strategy_validity_store_revend_timestamp"
+                      value="true"/>
 		</properties>
 	</persistence-unit>
 </persistence>

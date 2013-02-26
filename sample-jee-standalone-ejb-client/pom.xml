@@ -48,13 +48,27 @@
             <scope>provided</scope>
         </dependency>
         -->
+        <!--
+        jpa - needed for java.persistence.TemporalType in
+        sample-jee-server-domain : com.swesource.sample.jee.domain.Address
+        -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+        </dependency>
+        <!-- hibernate - needed for internal hibernate classes, e g PersistentBag -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+        </dependency>
         <!-- EJB client JAR - alt1 -->
         <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-client-all</artifactId>
-            <!--
-            <version>${jbossas-version}</version>
-            -->
             <scope>compile</scope>
         </dependency>
         <!-- EJB client JAR - alt2 -->
