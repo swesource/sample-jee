@@ -23,8 +23,8 @@ public class RelaySlsbBean implements RelaySlsbRemote {
 
     private static final Logger LOGGER = Logger.getLogger(RelaySlsbBean.class.getName());
 
-    @PersistenceContext(unitName = "samplePU")
-    private EntityManager em;
+    //@PersistenceContext(unitName = "samplePU")
+    //private EntityManager em;
 
     public String called() {
         LOGGER.info("In RelaySlsbBean.called()");
@@ -64,6 +64,6 @@ public class RelaySlsbBean implements RelaySlsbRemote {
 
     /* dummy method to avoid code metrics errors awaiting real implementation */
     public void persist() {
-        em.persist(new Object());
+//        em.persist(new Object());
     }
 }

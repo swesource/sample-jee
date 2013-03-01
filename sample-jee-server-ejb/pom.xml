@@ -179,9 +179,16 @@
                 <dependency>
                     <groupId>org.jboss.as</groupId>
                     <artifactId>jboss-as-arquillian-container-remote</artifactId>
-                    <version>7.1.2.Final</version>
+                    <version>${jbossas-version}</version>
                     <scope>test</scope>
                 </dependency>
+                <!--
+                <dependency>
+                    <groupId>org.jboss.remotingjmx</groupId>
+                    <artifactId>remoting-jmx</artifactId>
+                    <scope>test</scope>
+                </dependency>
+                -->
             </dependencies>
         </profile>
     </profiles>

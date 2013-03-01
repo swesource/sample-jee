@@ -6,8 +6,9 @@
         http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
 
     <container qualifier="jbossas-managed" default="true">
+    <!-- <container qualifier="jbossas" default="true"> -->
         <configuration>
-            <property name="jbossHome">/Users/arnie/Development/servers/jboss-as-7.1.2.Final</property>
+            <property name="jbossHome">/Users/arnie/Development/servers/jboss-as-7.1.3.Final</property>
             <property name="serverConfig">standalone-full.xml</property>
             <!--
             <property name="managementPort">4447</property>

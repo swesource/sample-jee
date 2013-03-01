@@ -8,6 +8,8 @@
         <jta-data-source>jdbc/arquillian</jta-data-source>
         <!-- It seems that we need to explicitly list the entities... -->
         <!-- If not an IllegalArgumentException is thrown saying "Unknown entity". -->
+        <class>com.swesource.sample.jee.domain.Address</class>
+        <class>com.swesource.sample.jee.domain.Person</class>
         <class>com.swesource.sample.jee.domain.User</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>

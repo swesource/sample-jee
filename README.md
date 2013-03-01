@@ -66,13 +66,17 @@ The remote interfaces of the EJBs in sample-jee-relay-ejb.
 
 ### sample-jee-server-*
 
+#### sample-jee-server-domain
+
+Domain model of POJOs / Entities.
+
 #### sample-jee-server-ear
 
 The EAR of these server modules.
 
 #### sample-jee-server-ejb
 
-EJBs.
+EJBs, MDBs, WSs.
 
 #### sample-jee-server-ejb-local
 
@@ -82,6 +86,14 @@ The local interfaces of the EJBs in sample-jee-server-ejb.
 
 The remote interfaces of the EJBs in sample-jee-server-ejb.
 
+#### sample-jee-server-ejb-ws-endpoint
+
+The endpoint interfaces of the WebService EJBs in sample-jee-server-ejb.
+
+#### sample-jee-server-web
+
+Web material and apps of the server components.
+
 #### sample-jee-standalone-ejb-client
 
 Standalone clients for SLSB & SFSB EJBs.
@@ -89,3 +101,24 @@ Standalone clients for SLSB & SFSB EJBs.
 ### sample-jee-standalone-jms-client
 
 Standalone clients for JMS queues/topics in HornetQ and ActiveMQ.
+
+### sample-jee-standalone-jmx-client
+
+### sample-jee-standalone-rs-client
+
+### sample-jee-standalone-ws-client
+
+## Use-cases
+### Client access
+### Clustering
+### Envers
+### jBPM
+### JSF
+### JSP
+### Servlets
+### EJB (SLSB-SFSB)
+### JMS
+### JMX
+### RS
+### WS
+### JPA

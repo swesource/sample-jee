@@ -9,9 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-        </sourceRoots>
       </configuration>
     </facet>
   </component>
@@ -29,15 +26,15 @@
     <orderEntry type="module" module-name="sample-jee-server-ejb-remote" scope="PROVIDED" />
     <orderEntry type="module" module-name="sample-jee-server-domain" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.faces:jboss-jsf-api_2.1_spec:2.0.2.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.richfaces.core:richfaces-core-impl:4.2.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.richfaces.core:richfaces-core-api:4.2.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.faces:jboss-jsf-api_2.1_spec:2.0.9.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.2.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.richfaces.core:richfaces-core-impl:4.3.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.richfaces.core:richfaces-core-api:4.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.cssparser:cssparser:0.9.5" level="project" />
     <orderEntry type="library" name="Maven: org.w3c.css:sac:1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.richfaces.ui:richfaces-components-ui:4.2.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.richfaces.ui:richfaces-components-api:4.2.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.richfaces.ui:richfaces-components-ui:4.3.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.richfaces.ui:richfaces-components-api:4.3.0.Final" level="project" />
   </component>
 </module>
 

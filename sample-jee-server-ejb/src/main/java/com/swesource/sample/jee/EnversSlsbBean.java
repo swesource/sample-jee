@@ -4,6 +4,8 @@ import com.swesource.sample.jee.domain.Person;
 
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Alternative;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -20,6 +22,7 @@ import org.hibernate.envers.query.AuditQuery;
  */
 @Stateless
 @Remote(EnversSlsbRemote.class)
+@Alternative
 public class EnversSlsbBean implements EnversSlsbRemote {
 
     private static final Logger LOGGER = Logger.getLogger(EnversSlsbBean.class.getName());
